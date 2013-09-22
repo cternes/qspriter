@@ -13,10 +13,10 @@ import de.slackspace.qspriter.writer.SpriteWriter;
 import de.slackspace.qspriter.writer.Writer;
 
 
-public class QSpriterGen {
+public class QSpriter {
 
 	public static void main(String[] args) {
-		new QSpriterGen(args);
+		new QSpriter(args);
 	}
 
 	private static String JSON_OUTPUT_NAME = 	"sprites.json";
@@ -26,7 +26,7 @@ public class QSpriterGen {
 	private ImageProcessor imageProcessor = new ImageProcessor();
 	private JsonWriter jsonWriter = new JsonWriter();
 
-	public QSpriterGen(String[] args) {
+	public QSpriter(String[] args) {
 		createSprites(args);
 	}
 	
